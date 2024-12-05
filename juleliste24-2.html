@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Juleliste24-2</title>
+  <link rel="stylesheet" href="juleliste24-2.css">
+</head>
+<body>
+<!--#region Square-->
+
+    <!-- THIS IS THE SQUARE SECTION (IGNORE!!!)
+    <div class="grid-container">
+        <div class="grid-item blueitem">BLUE</div>
+        <div class="grid-item reditem">RED</div>
+        <div class="grid-item greenitem">GREEN</div>
+        <div class="grid-item yellowitem">YELLOW</div>
+        <div class="grid-item purpleitem">PURPLE</div>
+        <div class="grid-item orangeitem">ORANGE</div>
+        <div class="grid-item pinkitem">PINK</div>
+        <div class="grid-item silveritem">SILVER</div>
+    </div> -->
+<!-- #endregion -->
+
+
+<audio id="audio_playback" autoplay loop src="">
+
+</audio>
+<div class="header-container">
+    <div class="header">
+        <h1>LIST!</h1>
+    </div>
+</div>
+<div id="audio">
+    <div id="audiopause">
+        <button id="apabutton" onclick="turnOffAudio()">STOP</button>
+    </div>
+    <div id="audioplay">
+        <button id="aplbutton" onclick="turnOnAudio()">PLAY</button>
+    </div>
+</div>
+<!--<div class="translate">
+    <button>T.R.A.N.S.L.A.T.E</button>
+</div>-->
+<div class="christmas">
+    <button onclick="christGround()">CHRISTMAS MODE!</button>
+</div>
+
+<div class="main-container">
+    <div class="showlist">
+        <label for="droplist">Choose</label>
+        <select id="droplist" name="wished">
+            <option value="option1">1: Camera</option>
+            <option value="option2">2: Tursekk 50L</option>
+            <option value="option3">3: Dashcamera</option>
+            <option value="option4">4: Tursko</option>
+            <option value="option5">5: Samsung tablet</option>
+            <option value="option6">6: Vektdyne</option>
+            <option value="option7">7: Metallboller</option>
+            <option value="option8">8: Guitar</option>
+            <option value="option9">9: Headset</option>
+            <option value="option10">10: Dumbell</option>
+            <option value="option11">11: Banjo</option>
+            <option value="option12">12: Sko</option>
+        </select>
+    </div>
+    <div class="showselect">
+        <button onclick="selectItem()">S E L E C T</button>
+    </div>
+    <div class="showimage">
+        <img src="https://tinyurl.com/456byf7r">
+    </div>
+    <div class="showprice">PRIS</div>
+    <div class="showlink">
+        <button onclick="openLink()">V I S I T</button>
+    </div>
+</div>
+
+<script src="juleliste24-2.js"></script>
+</body>
+</html>

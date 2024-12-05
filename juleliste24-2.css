@@ -1,0 +1,317 @@
+body {
+    background-color: black;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+/* #region Square*/
+ /*.grid-container {
+    background-color: black;
+    width: 100vh;
+    height: 100vh;
+    border: solid 5px white;
+    display: grid;
+    text-align: center;
+
+    grid-template-areas:
+    "blue1 blue1 blue1 blue1 blue1"
+    "red1 red1 red1 green1 green1"
+    "yellow1 yellow1 yellow1 green1 green1"
+    "purple1 purple1 purple1 green1 green1"
+    "orange1 orange1 pink1 silver1 silver1";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 5px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: solid 3px white;
+    width: 100%;
+    color: white;
+    height: 100%;
+}
+.blueitem {
+    background-color: blue;
+    grid-area: blue1;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+}
+.reditem {
+    background-color: red;
+    grid-area: red1;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+.greenitem {
+    background-color: green;
+    grid-area: green1;
+    grid-row: 2 / 5;
+    grid-column: 4 / 6;
+}
+.yellowitem {
+    background-color: yellow;
+    grid-area: yellow1;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
+.purpleitem {
+    background-color: purple;
+    grid-area: purple1;
+    grid-row: 4 / 6;
+    grid-column: 1 / 4
+}
+.orangeitem {
+    background-color: orange;
+    grid-area: orange1;
+    grid-row: 6 / 6;
+    grid-column: 1 / 3;
+}
+.pinkitem {
+    background-color: pink;
+    grid-area: pink1;
+    grid-row: 6 / 6;
+    grid-column: 4 / 4;
+}
+.silveritem {
+    background-color: silver;
+    grid-area: silver1;
+    grid-row: 6 / 6;
+    grid-column: 5 / 6;
+} */
+/* #endregion*/
+
+.header-container {
+    position: sticky;
+    display: grid;
+    border: solid 5px white;
+    background-color: #252525;
+    width: 50%;
+    height: 20vh;
+    width: 30vw;
+    margin: auto;
+    margin-top: 1%;
+    box-shadow: 2px 2px 2px white;
+    grid-template: repeat(3,1fr)/repeat(4,1fr);
+    border-radius: 4em 1em 4em 1em;
+} .header {
+    align-self: center;
+    justify-self: center;
+    grid-row: 1 / 4;
+    grid-column: 1 / 5;
+    
+    color: lightskyblue;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-shadow: 6px 3px 6px black;
+}
+/*audio buttons*/
+#audio {
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    display: grid;
+    background-color: #252525;
+    grid-template: 100px / repeat(2,1fr);
+    gap: 1% 1%;
+    width: 240px;
+    height: 100px;
+    border: solid 5px gray;  
+} #audiopause {
+    grid-column: 1/2;
+    grid-row: 1/2;
+} #audioplay {
+    grid-column: 2/3;
+    grid-row: 1/2;
+} #apabutton, #aplbutton {
+    width: 100%;
+    height: 100%;
+    font-size: 2em;
+    font-weight: 800;
+} #apabutton {
+    background-color: red;
+} #aplbutton {
+    background-color: green;
+} #audio_playback {
+    color: transparent;
+}
+/*.translate (discontinued) {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 1em;
+    background-color: #252525;
+
+} .translate > button {
+    border-radius: 50%;
+    font-size: 1.25em;
+} */
+.christmas {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border: 3px solid white;
+    border-radius: 40%;
+    padding: 0.5em;
+    background-color: darkred;
+    font-size: 1.2em;
+
+} .christmas > button {
+    border-radius: 40%;
+    font-size: 1em;
+
+}
+
+
+.main-container {
+    display: grid;
+    border: solid 5px white;
+    background-color: #252525;
+    margin: 5% auto 1% auto;
+    height: 60vh;
+    width: 75vw;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+
+    box-shadow: 0px -10px 5px 10px white;
+    border-radius: 2em;
+} .showlist {
+    display: flex;
+    border: solid 3px white;
+    color: beige;
+    background-color: transparent;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    margin-left: 1fr;
+    height: 2em;
+} #droplist {
+    background-color: black;
+    color: beige;
+} .showlist > label {
+    padding: 1em;
+    position: relative;
+    bottom: 0.6em;
+}
+
+.showselect {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border: solid 3px white;
+    padding: 0.2em;
+    box-shadow: 0.1em 0.1em 0.1em 0.1em white;
+    margin-left: 1em;
+    border-radius: 0.5em;
+} .showselect > button {
+    margin: 0;
+    width: 13.5em;
+    height: 3.25em;
+    background-color: black;
+    color: beige;
+    font-weight: 800;
+}
+
+.showimage {
+    grid-row: 1/7;
+    grid-column: 6/11;
+    border: solid 5px white;
+    box-shadow: 0 -5px 5px 5px white;
+    color: white;
+    border-bottom-left-radius: 2em;
+    background: none;
+    z-index: 2;
+} .showimage > img {
+    overflow: hidden;
+    position: relative;
+    right: 0.2em;
+    width: 100%;
+    height: 98%;
+    border: solid 3px white;
+    border-bottom-left-radius: 2em;
+
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+.showprice {
+    grid-column: 6/7;
+    grid-row: 8/9;
+    border: solid 3px white;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+    text-shadow: 3px 3px 3px 5px black;
+    width: 8em;
+    height: 3em;
+    margin-bottom: 2em;
+    box-shadow: 0px -3px 3px 4px;
+    border-radius: 1em;
+    text-align: center;
+    padding-top: 1em;
+}
+.showlink {
+    grid-row: 7/8;
+    grid-column: 9/10;
+    border: 3px solid white;
+    border-radius: 0 0 1em 1em;
+    padding: 1em;
+    box-shadow: -3px 3px 3px 3px white;
+} .showlink > button {
+    width: 8em;
+    height: 2em;
+}
+
+/*BAKGRUNN TIL JULEMOTIV*/
+.snowing_background {
+    background-image: url(https://tinyurl.com/mrp6hbmk);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nisse_background {
+    background-image: url(https://tinyurl.com/2n6xwh98);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.random_background {
+    background-image: url(https://tinyurl.com/4nbtmjek);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 50%;
+}
+.ultra_rare_background {
+    background-image: linear-gradient(to right, red, orange, yellow, blue, green, indigo, purple);
+    color: transparent;
+    font-size: 3em;
+    background-clip: text;
+
+}
+
+/*.links {
+    1. camera: https://webtronic.no/no/item/categoryitem/WEB22605-001?gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltON63-ceA9gR9AIlSTVVw8Uf0emR4xJvMJeyFWncHMJD8yMktr-KrZhoC5ewQAvD_BwE
+    bilde: https://www.kamera-express.nl/media/e1efa9ea-dcf3-4706-a163-3e94b3b662d9/nikon-coolpix-p950.jpg
+
+    2. tursekk: https://www.fjellsport.no/merker/osprey/osprey-kestrel-48-atlas-blue-255559?channable=01384b6964003334352d303633354f&variantId=345-0635&utm_campaign=05.%20Kelkoo%20Shopping%20Brand%20%5Btop%20sellers%5D&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOD8-xwiraY-rEebmZHPTmqiHcwYg2cvR5mygM7lO1EQ44Ddn9VksdBoCykIQAvD_BwE
+    bilde: https://www.fjellsport.no/assets/blobs/Kestrel48-S23-Side-AtlasBlue%2010004763-web-e45d76c134.jpeg?preset=medium
+
+    3. dashcamera: https://www.netonnet.no/art/hjem-fritid/bil-og-gps/gps-til-bil/garmin-dash-cam-mini-2/1022818.11527/?utm_source=google&utm_medium=cpc&utm_campaign=p-no-netonnet-hem-fritid-smarta-hem-pmax&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOKDRvij4N_6L2B-tf2cWMGbFlMwFkrUlUmSaJKulrF3j0Pb8VdpQaxoCp-YQAvD_BwE
+
+    4.  tursko: "https://www.revolutionrace.no/sko/phantom-trail-mid-waterproof-hiking-boots-men?Size=46&Color=2345&ab_version=B&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOI28GYZF6va4IP76jAEMTDzy8OqdyT3BcZ0-d8amc6jxUlvkTu5yUxoCdVUQAvD_BwE;
+
+    5. tablet: https://www.proshop.no/iPad-Nettbrett/Samsung-Galaxy-Tab-S9-256GB12GB-Grafitt/3181750?utm_source=google&utm_medium=cpc&utm_campaign=searchengine&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOKDdJlVEp3blj2wN37EKDssylOLSlfbhN3IJeM9ExUwwTvM_rbi-1RoCvesQAvD_BwE
+
+    6. vektdyne: https://curaofsweden.com/no/cura-pearl-classic-white-150x210-11kg?gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOK7anGlAaX94CoVpJ_Ft2_l4eVbz7lnUG58DJD2wakbxBVS2szJiCRoCmIEQAvD_BwE
+    
+
+    7. boller: https://www.tilbords.no/kjokken/bakeutstyr/bakeboller/wmf-gourmet-bollesett-4-deler/?gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltONj7_eY8QB4WK7Yw1Gh7QOydxab3bO48SQHl-1MdD2PeOJdBQNEbOBoCFGkQAvD_BwE
+
+    8. Guitar: https://www.gear4music.no/no/Gitar-and-Bass/Yamaha-F310-Acoustic-Natural/3VAI?origin=product-ads&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOM0mjXyqTmWXtut9QkXrwJj1RxILTHIcHfqn9vvgh2aXcY6b7Igg0RoCzGAQAvD_BwE
+        https://www.gear4music.com/Guitar-and-Bass/Classical-Guitar-Black-by-Gear4music/15PF
+    9. headset: https://www.komplett.no/product/1310167/tv-lyd-bilde/hodetelefoner-tilbehoer/hodetelefoner/bose-quietcomfort-sc-traadloese-hodetelefoner-over-ear-sort?channable=00808169640031333130313637a7&utm_source=google&utm_medium=cpc&utm_campaign=PMax-BrownGoods&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOGF0IKAqwxNRDJr3zqWw2w4JnQt4UEbTDLiYjnTo9_O5nr_A5XKHGBoC8LMQAvD_BwE&gclsrc=aw.ds
+
+    10. dumbells: https://kompaktgym.no/products/justerbare-flex-manualer-2-x-24kg?variant=45758879170865&country=NO&currency=NOK&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOHdQQd0Dcz9it1o8wEeF0iWe2WujDa1TlSOlggwscZpNBhZBcchVgxoCprEQAvD_BwE
+} */
